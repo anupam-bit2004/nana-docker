@@ -45,7 +45,8 @@ pipeline {
             steps {
                 script{
                     gv.deployApp()
-                    echo "deploying to ${ENV}"
+                    echo "deploying to ${ENV-ONE}"
+                    echo "deploying to ${ENV-TWO}"
                 }
                     
             }
